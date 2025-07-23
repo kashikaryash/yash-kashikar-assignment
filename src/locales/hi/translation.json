@@ -1,0 +1,27 @@
+{
+  "greeting": "नमस्ते, स्वागत है!",
+    "dashboard": "डैशबोर्ड",
+    "team": "टीम",
+    "projects": "परियोजनाएँ",
+    "calendar": "कैलेंडर",
+    "notifications": "सूचनाएं",
+    "chairs": "कुर्सियाँ",
+    "tables": "मेज़",
+    "sofas": "सोफे",
+    "armchairs": "आर्मचेयर",
+    "beds": "बिस्तर",
+    "storage": "स्टोरेज",
+    "textiles": "कपड़े",
+    "lighting": "लाइटिंग",
+    "toys": "खिलौने",
+    "decor": "सजावट",
+  "giftCards": "उपहार कार्ड",
+  "showrooms": "शोरूम",
+  "aboutUs": "हमारे बारे में",
+  "contactNumber": "(686) 492-1044",
+  "contactExpert": "विशेषज्ञ से संपर्क करें",
+  "loginRegister": "लॉगिन / रजिस्टर",
+  "search_products":"उत्पादों को खोजना",
+  "wishlist": "इच्छा यादी"
+
+}
