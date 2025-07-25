@@ -22,21 +22,11 @@ export default function CategoriesSection() {
       <div className="max-w-screen-2xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {categories.map((cat) => (
-            <div
-              key={cat.name}
-              className="relative w-full aspect-square group overflow-hidden rounded-full shadow-sm"
-            >
-              {/* Image */}
-              <img
-                src={cat.image}
-                alt={cat.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+            <div key={cat.name} className="relative w-full aspect-square group overflow-hidden rounded-full shadow-sm">
+              <img src={cat.image} alt={cat.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
 
-              {/* Overlay on hover */}
               <div className="absolute inset-0 bg-transparent group-hover:bg-black/50 transition-all duration-500 pointer-events-none rounded-full" />
 
-              {/* Text content */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
                 <div className="bg-white text-black px-4 py-1.5 rounded-full font-semibold text-sm shadow transition duration-300">
                   {cat.name}

@@ -44,32 +44,17 @@ export default function BrandShowcase() {
 
             <div className="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                 {brands.map((brand) => (
-                    <div
-                        key={brand.name}
-                        className="relative rounded-xl overflow-hidden shadow-sm group cursor-pointer"
-                    >
-                        {/* Image */}
-                        <img
-                            src={brand.image}
-                            alt={brand.name}
-                            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-                        />
+                    <div key={brand.name} className="relative rounded-xl overflow-hidden shadow-sm group cursor-pointer">
+                        <img src={brand.image} alt={brand.name} className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"/>
 
-                        {/* Overlay (semi-transparent black on hover) */}
                         <div className="absolute inset-0  bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500 z-10"></div>
 
-                        {/* Content (text + logo) */}
                         <div className="absolute inset-0 flex flex-col justify-start items-start p-4 z-20 text-white">
-                            <img
-                                src={brand.logo}
-                                alt={`${brand.name} logo`}
-                                className="w-10 h-10 rounded-full bg-white p-1 mb-2"
-                            />
+                            <img src={brand.logo} alt={`${brand.name} logo`} className="w-10 h-10 rounded-full bg-white p-1 mb-2"/>
                             <div className="font-semibold text-lg">{brand.name}</div>
                             <div className="text-sm opacity-90">{brand.location}</div>
                         </div>
                     </div>
-
                 ))}
             </div>
         </section>

@@ -60,21 +60,15 @@ const YashKashikarHomePage = () => {
 
       <Footer />
 
-      {/* Buy Woodmart Button */}
-      <button
-        className="fixed bottom-20 left-4 sm:left-6 md:left-8 lg:left-12 z-50 bg-black text-white px-4 py-2 text-sm md:text-base rounded-full shadow-lg hover:bg-[#00B207] transition-all flex items-center gap-2"
-      >
+      <button className="fixed bottom-15 left-4 sm:left-6 md:left-8 lg:left-12 z-50 bg-black text-white px-4 py-2 text-sm md:text-base rounded-full shadow-lg hover:bg-[#00B207] transition-all flex items-center gap-2">
         <img src="/images/buyproduct.png" alt="Cart" className="w-4 h-4 md:w-5 md:h-5" />
-        <span className="hidden xs:inline">Buy Woodmart</span>
+        <span className="hidden sm:inline text-xs">Buy Woodmart</span>
       </button>
 
-      {/* Scroll to Top Button */}
+
+
       {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-4 sm:right-6 z-50 bg-white text-black p-2 sm:p-3 rounded-full shadow-lg transition-all"
-          aria-label="Scroll to Top"
-        >
+        <button onClick={scrollToTop} className="fixed bottom-6 right-4 sm:right-6 z-50 bg-white text-black p-2 sm:p-3 rounded-full shadow-lg transition-all" aria-label="Scroll to Top">
           <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       )}
