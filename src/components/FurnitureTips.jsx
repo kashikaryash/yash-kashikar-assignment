@@ -5,7 +5,8 @@ export default function FurnitureTips() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="bg-[#fdfaf5] px-4 sm:px-8 py-16">
+    <section className="bg-[#FAF9F6] px-4 sm:px-8 py-16">
+      <h2 className="text-3xl sm:text-4xl font-bold">Rules for choosing furniture</h2>
       <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-10 items-center relative">
 
         {/* Left - Chair */}
@@ -22,7 +23,6 @@ export default function FurnitureTips() {
 
         {/* Right - Content */}
         <div className="space-y-6">
-          <h2 className="text-3xl sm:text-4xl font-bold">Rules for choosing furniture</h2>
           <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
             <strong className="text-black">
               Whether living on your own or with a family, your living room is an important space.

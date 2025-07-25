@@ -5,42 +5,42 @@ const products = [
         category: 'Chairs',
         price: 320,
         rating: 4.5,
-        image: '/images/curve.jpg',
+        image: '/images/weeklybestsellers/curve.jpg',
     },
     {
         name: 'Can',
         category: 'Sofas',
         price: 2100,
         isNew: true,
-        image: '/images/can.jpg',
+        image: '/images/weeklybestsellers/can.jpg',
     },
     {
         name: 'Belt',
         category: 'Armchairs',
         price: 680,
         colorOptions: ['#D1CCC0', '#DBDAD7', '#44403C'],
-        image: '/images/belt.jpg',
+        image: '/images/weeklybestsellers/belt.jpg',
     },
     {
         name: 'Ciro LR',
         category: 'Tables',
         price: 449,
         rating: 5,
-        image: '/images/ciro.jpg',
+        image: '/images/weeklybestsellers/ciro.jpg',
     },
     {
         name: 'Soft Edge',
         category: 'Chairs',
         price: 440,
         colorOptions: ['#000000', '#D1CCC0', '#991B1B'],
-        image: '/images/soft-edge.jpg',
+        image: '/images/weeklybestsellers/soft-edge.jpg',
     },
     {
         name: 'Palissade',
         category: 'Sofas',
         price: 1890,
         rating: 4.5,
-        image: '/images/palissade.jpg',
+        image: '/images/weeklybestsellers/palissade.jpg',
     },
     {
         name: 'Bitta',
@@ -48,13 +48,13 @@ const products = [
         price: 1519,
         originalPrice: 1688,
         discount: 10,
-        image: '/images/bitta.jpg',
+        image: '/images/weeklybestsellers/bitta.jpg',
     },
     {
         name: 'Albert',
         category: 'Armchairs',
         price: 1600,
-        image: '/images/albert.jpg',
+        image: '/images/weeklybestsellers/albert.jpg',
     },
     {
         name: 'Navona',
@@ -62,24 +62,24 @@ const products = [
         price: 1669,
         originalPrice: 1950,
         discount: 10,
-        image: '/images/navona.jpg',
+        image: '/images/weeklybestsellers/navona.jpg',
     },
     {
         name: 'Aruda',
         category: 'Tables',
         price: 699,
         rating: 4.5,
-        image: '/images/aruda.jpg',
+        image: '/images/weeklybestsellers/aruda.jpg',
     },
 ];
 
 const WeeklyBestsellers = () => {
     return (
-        <section className="py-12 px-4 max-w-screen-2xl mx-auto">
+        <section className="py-12 px-18 max-w mx-auto bg-[#FAF9F6]">
             <h2 className="text-3xl font-bold mb-6">Weekly bestsellers</h2>
 
             {/* Filters */}
-            <div className="flex items-center gap-6 mb-8 text-gray-700 font-medium ml-240">
+            <div className="flex gap-6 mb-8 text-gray-700 font-medium ml-210">
                 {['All', 'Chairs', 'Sofas', 'Armchairs', 'Tables'].map((filter, index) => (
                     <button key={index}
                         className={`pb-1 border-b-2 ${filter === 'All' ? 'border-orange-500 text-black' : 'border-transparent hover:border-gray-300'
@@ -157,8 +157,8 @@ const WeeklyBestsellers = () => {
                         )}
 
                         {/* --- HOVER ACTIONS BELOW PRICE --- */}
-                        <div className="mt-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
-                            <div className="flex items-center justify-between">
+                        <div className="mt-3 max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-300 ease-in-out overflow-hidden text-sm text-gray-600">
+                            <div className="flex items-center justify-between mt-2">
                                 <button className="bg-orange-500 text-white text-sm px-4 py-2 rounded-full shadow hover:bg-orange-600 transition">
                                     Add to Cart
                                 </button>
@@ -172,6 +172,7 @@ const WeeklyBestsellers = () => {
                                 </div>
                             </div>
                         </div>
+
 
                     </div>
 

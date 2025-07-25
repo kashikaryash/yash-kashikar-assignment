@@ -48,7 +48,7 @@ const text = `
 const LatestArticles = () => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-12">
+    <section className="w-full mx-auto px-12 py-12 bg-[#FAF9F6]">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl font-bold">Latest articles</h2>
         <button className="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">

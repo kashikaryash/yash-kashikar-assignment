@@ -34,7 +34,7 @@ const brands = [
 
 export default function BrandShowcase() {
     return (
-        <section className="px-4 sm:px-8 py-12 bg-neutral-50">
+        <section className="px-4 sm:px-8 py-12 bg-[#FAF9F6]">
             <div className="max-w-screen-xl mx-auto mb-8">
                 <h2 className="text-3xl font-bold text-left mb-2">Shopping by brands</h2>
                 <p className="text-gray-500 text-left">
